@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="angular.min.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="sintarjeta.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="cuadro" ng-controller="Ticket2Controller">
+    <div class="container-fluid2 main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card text-center" style="padding: 20px;">
+                    <h2>{{nombreBanco }}</h2>
+                    <h3 class="menu">Ticket Retiro</h3>
+                    <h2>Número de Cuenta: {{ tarjeta.numero_Tarjeta }}</h2>
+                    <h2>{{ tarjeta.cliente.nombre + " " + tarjeta.cliente.apellido }}</h2>
+                    <form class="Retirocss" name="retiroEfectivo" style="text-align: center;">
+                        <div>
+                            <h3 class="ticket">Monto Depositado: {{ retiro }}</h3>
+                            <h3 class="ticket">Saldo actual: {{ tarjeta.saldo }}</h3>
+                        </div>
+                        <button ng-click="Menu2()" style="width: 100px; font-size:20px;color:blue;margin-top:10px;">Regresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

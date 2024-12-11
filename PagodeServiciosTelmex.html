@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="angular.min.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="Pagos.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="cuadro" ng-controller="TelmexController">
+    <div >
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                
+                <div class="form-login2">
+                    
+                    <div class="h5-container" >
+                        
+                        <img class="left2" src="/img/telmex.jpg" alt="" style="max-width: 100px; max-height: 100px;">
+                        <div class="container-fluid3 main-container" >
+                        <div >
+                            <br>
+                            <div class="tex2">
+                                <h1 class="tex2">Ticket</h1>
+                                <h2 class="tex2">{{nombreBanco }}<br></h2>
+                                ------------------------
+                                <br>
+                                <h4 class="tex2" class="center">Número de Cuenta: {{ tarjeta.numero_Cuenta }}<br></h4>
+                                <h4 class="tex2" class="left">Nombre del cliente: {{ tarjeta.cliente.nombre+ " " + tarjeta.cliente.apellido }}</h4>
+                                
+                                
+                            </div>
+                           
+                        </div>
+                        <div class="h5-container1">
+                            <div class="tex2">
+                                <h4 class="tex2" class="left1">Direccion: {{ tarjeta.cliente.ciudad }}</h4>
+                                <h4 class="tex2" class="left1">Telefono: {{ tarjeta.cliente.telefono }}</h4>
+                                <h4 class="tex2" class="left1">Correo: {{ tarjeta.cliente.email }}</h4>
+                                -----------------------------------------
+                                <BR>
+                                <BR>
+                                <h4 class="tex2">Servicio: {{PagoServicios.servicio}}</h4>
+                                <br>
+                                <h4 class="tex2">sub total:--------------------${{PagoServicios.monto*0.84}}</h4>
+                                <h4 class="tex2">IVA:----------------------------16%</h4>
+                                <h4 class="tex2">Total---------------------------${{PagoServicios.monto}}</h4>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <BR>
+                        <BR>
+                            <button class="amount-button" ng-click="retirarSaldo()">Realizar pago</button>
+                        <BR>
+                        <BR>
+                        
+                    <img src="/img/Regresar.png" alt="Retiro de Efectivo" style="width: 50px;" ng-click="Servicios()" >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="angular.min.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="sintarjeta.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="cuadro" ng-controller="serviciosintarjeta">
+    <div class="container-fluid2 main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card text-center" style="padding: 20px;">
+                    <h2 class="tex2" >{{nombreBanco }}</h2>
+                        <br>
+                        <br>
+                    <div class="h5-container">
+                        <button class="left"><h3 class="tex">IZZI<br> <img src="/img/izzi.jpeg" alt="Retiro de Efectivo" style="width: 130px;" ng-click = "CFE()" ></h3></button>
+                        <button class="right"><h3 class="tex">TELMEX<br> <img src="/img/telmex.jpg" alt="Retiro de Efectivo" style="width: 130px;" ng-click = "CFE()" ></h3></button>
+                    </div>
+                    <br>
+                    <div class="h5-container1">
+                        <button class="left"><h3 class="tex">CFE<br> <img src="/img/cfe.jpg" alt="Retiro de Efectivo" style="width: 130px;" ng-click = "CFE()" ></h3></button>
+                       
+                    </div>
+                    <BR>
+                    <BR>
+                    <BR>
+                    <img src="/img/Regresar.png" alt="Retiro de Efectivo" style="width: 50px;" ng-click="Menu2()">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

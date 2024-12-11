@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="angular.min.js"></script>
+    <script src ="DepocitosControlerAPP.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="cuadro" ng-controller="DepocitoController">
+    <div class="container-fluid2 main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card text-center" style="padding: 20px;">
+                    <h2>{{nombreBanco }}</h2>
+                    <h2>Número de Cuenta: {{ tarjeta.numero_Cuenta }}</h2>
+                    <h2>{{ tarjeta.cliente.nombre+ " " + tarjeta.cliente.apellido }}</h2>
+
+                    <h3 class="menu">Depocitos</h3>
+                    
+                    <form class="Retirocss" name="retiroEfectivo" style="text-align: center;">
+                        <input name="display" ng-model="display" size="6" style="text: Arial; font-size: 20pt; background-color:#58D3F7">
+                        
+                        <div class="number-buttons">
+                            <button class="number-button" ng-click="number(1)">1</button>
+                            <button class="number-button" ng-click="number(2)">2</button>
+                            <button class="number-button" ng-click="number(3)">3</button>
+                        </div>
+                        <div class="number-buttons">
+                            <button class="number-button" ng-click="number(4)">4</button>
+                            <button class="number-button" ng-click="number(5)">5</button>
+                            <button class="number-button" ng-click="number(6)">6</button>
+                        </div>
+                        <div class="number-buttons">
+                            <button class="number-button" ng-click="number(7)">7</button>
+                            <button class="number-button" ng-click="number(8)">8</button>
+                            <button class="number-button" ng-click="number(9)">9</button>
+                        </div>
+                        <div class="number-buttons">
+                            <button class="number-button" ng-click="number(0)">0</button>
+                            <button class="clear-button" ng-click="clear1()">C</button>
+                        </div>
+                        
+                    </form>
+                    <li><button class="amount-button" ng-click="retirarSaldo()">Realizar Deposito</button></li>
+                    <img src="/img/Regresar.png" alt="Retiro de Efectivo" style="width: 50px;" ng-click ="Menu2()" >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

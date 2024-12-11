@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="angular.min.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="sintarjeta.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="cuadro" ng-controller="sinterjetaCFE">
+    <div >
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                
+                <div class="form-login2">
+                    <h2 class="tex2">{{nombreBanco }}<br></h2>
+                    <div ng-hide="!continuar">
+                        <label class="tex2" for="exampleFormControlInput1" class="form-label"><h3>Numero de Cliente</h3></label>
+                        <br>
+                        <input class="controls" id="PagoServicios" ng-change="PagoServicio()" type="text" ng-model="iD_PagoServicio" ng-pattern="/^[0-9]*$/" maxlength="5" name="tarjeta" placeholder="Numero de Cliente" required>
+                        
+                    </div>
+                    <div ng-hide="continuar">
+                    <div ng-hide="continuar" class="h5-container" >
+                        
+                        
+                        <div class="container-fluid3 main-container" >
+                        <div >
+                            <br>
+                            <div class="tex2">
+                                <h1 class="tex2">Ticket</h1>
+                                <h2 class="tex2">{{PagoServicios.servicio }}<br></h2>
+                                ------------------------
+                                <br>
+                                <h4 class="tex2" class="center">Número de Cuenta: {{ PagoServicios.iD_PagoServicio }}<br></h4>
+                                <h4 class="tex2" class="left">Nombre del cliente: {{ PagoServicios.cliente.nombre+ " " + PagoServicio.cliente.apellido }}</h4>
+                                
+                                
+                            </div>
+                           
+                        </div>
+                        <div class="h5-container1">
+                            <div class="tex2">
+                                <h4 class="tex2" class="left1">Direccion: {{ PagoServicios.cliente.ciudad }}</h4>
+                                <h4 class="tex2" class="left1">Telefono: {{ PagoServicios.cliente.telefono }}</h4>
+                                <h4 class="tex2" class="left1">Correo: {{ PagoServicios.cliente.email }}</h4>
+                                -----------------------------------------
+                                <BR>
+                                <BR>
+                                <h3 class="ser">Servicio: {{PagoServicios.servicio}}</h3>
+                                <br>
+                                <h4 class="tex2">sub total:--------------------${{PagoServicios.monto*0.84 | number : 0}}</h4>
+                                <h4 class="tex2">IVA:----------------------------16%</h4>
+                                <h4 class="tex2">Total---------------------------${{PagoServicios.monto}}</h4>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <BR>
+                        <BR>
+                            <button class="amount-button" ng-click="retirarSaldo()">Realizar pago</button>
+                        <BR>
+                        <BR>
+                </div>
+                <img src="/img/Regresar.png" alt="Retiro de Efectivo" style="width: 50px;" ng-click="menu()" >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

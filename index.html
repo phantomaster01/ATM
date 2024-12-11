@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="angular.min.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="ControlerAPP.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body ng-controller="FirstController">
+    <div class="cuadro">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                <section class="form-login">
+                    
+                    <form name="myForm">
+                        <br>
+                        <h2 class="tex2">{{nombreBanco}} </h2>
+                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 50%;">
+                                <div ng-hide="!continuar">
+                                    <label class="tex2" for="exampleFormControlInput1" class="form-label"><h3>Tarjeta</h3></label>
+                                    <br>
+                                    <input class="controls" id="tarjeta" ng-change="tarjetas()" type="text" ng-model="NumeroTarjeta" ng-pattern="/^[0-9]*$/" maxlength="16" name="tarjeta" placeholder="Numero De Tarjeta" required>
+                                    
+                                </div>
+                                <div ng-hide="continuar">
+                                    <label class="tex2" for="exampleFormControlInput1" class="form-label"><h3>NIP</h3></label>
+                                    <input class="controls" id="nip" type="password" ng-model="nip" ng-pattern="/^[0-9]*$/" ng-maxlength="4" name="nip" placeholder="NIP de la Tarjeta" ng-disabled="!NumeroTarjeta"  required>
+                                    <div ng-show="myForm.nip.$error.pattern || myForm.nip.$error.maxlength" class="invalid-feedback">
+                                        Por favor, ingrese un NIP válido.
+                                    </div>
+                                    <div ng-show="myForm.nip.$error.required && myForm.nip.$touched" class="invalid-feedback">
+                                        NIP requerido.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div style="display: flex; justify-content: center;">
+                            <button class="buttons" ng-click="validar()" type="button">INICIAR</button>
+                        </div>
+                        
+                        <div class="button-container">
+                            <button class="buttons2" onclick="window.location.href='/Tramites.html'" type="button" >Tramites sin Tarjeta</button>
+                        </div>
+    
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

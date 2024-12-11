@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp" lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="angular.min.js"></script>
+    <script src ="ControlerAPP.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body ng-controller="MenuController">
+    
+    <div class="cuadro">
+        <div >
+            
+            <div class="col-lg-6 offset-lg-3">
+                <div  class="form-login2">
+                    <div class="h5-container">
+                        <img class="left" src="/img/LOGO10.png" alt="" style="max-width: 100px; max-height: 100px;">
+                        
+                        <div class="tex2">
+                            <h2 class="tex2">{{nombreBanco }}<br></h2>
+                            <h4 class="tex2" class="center">Número de Cuenta: {{ tarjeta.numero_Cuenta }}<br></h4>
+                            <h4 class="tex2" class="center">{{ tarjeta.cliente.nombre+ " " + tarjeta.cliente.apellido }}</h4>
+                            <br>
+                            <h3 class="center" class="menu">Menu Principal</h3>
+                        </div>
+                       
+                    </div>
+                    
+                    
+                    <div>
+                        <br>
+                        <br>
+                        <div class="h5-container">
+                           <button class="left"><h3 class="tex">Retiro<br> <img src="/img/retiroe.jpg" alt="Retiro de Efectivo" style="width: 130px;" ng-click = "retiro()" ></h3></button>
+                            <button class="center"><h3 class="tex">Deposito<br><img src="/img/depocito.jpg" alt="Retiro de Efectivo" style="width: 130px;" ng-click = "Deposito()"> </h5></button>
+                            <button class="right"><h3 class="tex">transferencia<br><img src="/img/transferencia.jpg" alt="Retiro de Efectivo" style="width: 130px;" ng-click= "Transferir()" ></h3></button>
+                        </div>
+                        <br>
+                        <div class="h5-container1">
+                            <button class="left1"><h3 class="tex">Consulta<br><img src="/img/consulta.jpg" alt="Retiro de Efectivo" style="width: 130px;" ng-click="/Consulta.html" ></h3></button>
+                            <button class="center1"><h3 class="tex">Servicios<br><img src="/img/pagoservicios.png" alt="Retiro de Efectivo" style="width: 130px;" ng-click="Servicios()" ></h3></button>
+                            <button class="right1"><h3 class="tex">Salir<br><img src="/img/salir.png" alt="Retiro de Efectivo" style="width: 130px;" onclick="window.location.href='/index.html'" ></h3></button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

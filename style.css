@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(/img/Fondo.png);
+    background-size: cover;
+}
+.form-label{
+color: #000000;
+}
+  
+.form-login {
+    width: 500px;
+    height: 340px;
+    background-image: url('/img/bg.png');
+    background-size: cover;
+    margin: auto;
+    margin-top: auto;
+    box-shadow: 7px 13px 37px #000000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+    background-position: center;
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #d4cccc;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 55px; /* Cambia este valor según sea necesario */
+    height: 25px;
+    background: #017bab;
+    border: 2px solid #017bab;
+    color: white;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Para centrar horizontalmente el texto */
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons2 {
+    width: 150px; /* Cambia este valor según sea necesario */
+    height: 25px;
+    background: #017bab;
+    border: 2px solid #017bab;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Para centrar horizontalmente el texto */
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+.form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background-image: url('/img/Designer3.jpeg');
+
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+
+.cuadro {
+    display: flex;
+    text-align: center;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 100%; 
+    margin: 0 auto; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cuadro img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+    
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+h4{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    
+}
+h5{
+    color: rgb(3, 3, 3);
+    text-align: center;
+
+    
+}
+/*---------------------------------------------------------------------------------------------*/
+.h5-container {
+    display: flex;
+}
+.h5-container h5 {
+    margin: 10;
+}
+
+.left {
+    margin-left: 40px; 
+    margin-right: 60px; /* Espacio entre el primer y segundo h5 */
+}
+
+.center {
+    margin: 0px; /* Esto centrará el segundo h5 */
+}
+
+.right {
+    margin-left: 60px; /* Espacio entre el segundo y tercer h5 */
+}
+.h5-container1 {
+    display: flex;
+}
+.h5-container1 h5 {
+    margin: 10;
+}
+
+.left1 {
+    margin-left: 40px; 
+    margin-right: 60px; /* Espacio entre el primer y segundo h5 */
+}
+
+.center1 {
+    margin: 0px; /* Esto centrará el segundo h5 */
+}
+
+.right1 {
+    margin-left: 60px; /* Espacio entre el segundo y tercer h5 */
+}
+.left2 {
+    margin-left: 0px; 
+    margin-right: -100px; /* Espacio entre el primer y segundo h5 */
+}
+/*-----------------------------------------------------------------------------------------------*/
+.menu{
+    color: rgb(255, 255, 255);
+}
+.tex{
+    color: #000000;
+}
+.tex2{
+    color: #ffffff;
+}
+
+.button-container {
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+.tex1{
+    color: rgb(35, 172, 236);
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    
+}
+
+.main-container {
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 20px; 
+}
+
+.card {
+    padding: 20px;
+}
+.form-login2 {
+    width: 700px;
+    height: 600px;
+    background-image: url('/img/fondomenu.jpg');
+    margin: auto;
+    margin-top: auto;
+    box-shadow: 7px 13px 37px #000000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+    background-position: center;
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+
+.container-fluid2 {
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 600px; /* Ajusta el ancho máximo según tu preferencia */
+    max-height: 600px; /* Ajusta el alto máximo según tu preferencia */
+    margin: 0 auto; 
+    background-image: url('/img/fondo8.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+}
+.container-fluid3 {
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 400px; /* Ajusta el ancho máximo según tu preferencia */
+    max-height: 400px; /* Ajusta el alto máximo según tu preferencia */
+    margin: 0 auto; 
+    background-image: url('/img/fondo8.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.left-items,
+.right-items {
+    list-style: none;
+    padding: 0;
+}
+
+.left-items {
+    margin-right: 20px; /* Espacio entre los grupos de botones */
+}
+
+
+.amount-button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: green;
+}
+
+.number-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: blue;
+    margin: 5px; /* Agrega espacio entre los botones */
+}
+
+.clear-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: blue;
+}
+
+.return-button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: blue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.number-buttons {
+    margin-bottom: 10px; /* Agrega espacio entre las filas de botones numéricos */
+}
+.ticket{
+    color: rgb(255, 255, 255);
+}
+.invalid-feedback {
+    color: #dc3545; /* Color rojo */
+    font-size: 14px;
+    margin-top: 5px; /* Espacio entre el campo de entrada y el mensaje de retroalimentación */
+}
+.ser{
+    color: #e10707;
+}

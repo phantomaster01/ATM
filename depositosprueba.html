@@ -1,0 +1,81 @@
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>StartBank</title>
+    <script src="angular.min.js"></script>
+    <script src="sintarjeta.js"></script>
+    <style>
+        /* Estilos CSS para el cuerpo del mensaje de correo electrónico */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .mensaje {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container-fluid2 {
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            max-width: 600px; /* Ajusta el ancho máximo según tu preferencia */
+            max-height: 600px; /* Ajusta el alto máximo según tu preferencia */
+            margin: 0 auto; 
+            background-image: url('/img/fondomenu.jpg'); /* URL de la imagen de fondo */
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+            background-position: center;
+        }
+        .ticket {
+            color: rgb(255, 255, 255);
+        }
+        .menu {
+            color: rgb(255, 255, 255);
+        }
+        .cuadro {
+            display: flex;
+            text-align: center;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            width: 100%; 
+            margin: 0 auto; 
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="cuadro" ng-controller="Ticket2Controller">
+    <div class="container-fluid2 main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card text-center" style="padding: 20px;">
+                    <img class="left" src="/img/LOGO10.png" alt="" style="max-width: 100px; max-height: 100px;">
+                    <h2>{{nombreBanco }}</h2>
+                    <h3 class="menu">Ticket Retiro</h3>
+                    <h2>Número de Cuenta: {{ tarjeta.numero_Tarjeta }}</h2>
+                    <h2>{{ tarjeta.cliente.nombre + " " + tarjeta.cliente.apellido }}</h2>
+                    <form class="Retirocss" name="retiroEfectivo" style="text-align: center;">
+                        <div>
+                            <h3 class="ticket">Monto Depositado: {{ retiro }}</h3>
+                            <h3 class="ticket">Saldo actual: {{ tarjeta.saldo }}</h3>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
