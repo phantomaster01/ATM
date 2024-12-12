@@ -16,7 +16,7 @@ color: #000000;
 .form-login {
     width: 500px;
     height: 340px;
-    background-image: url('/ATM/img/bg.png');
+    background-image: url('/img/bg.png');
     background-size: cover;
     margin: auto;
     margin-top: auto;
