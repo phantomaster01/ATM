@@ -6,7 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-image: url(/img/Fondo.png);
+    background-image: url(/ATM/img/Fondo.png);
     background-size: cover;
 }
 .form-label{
@@ -16,7 +16,7 @@ color: #000000;
 .form-login {
     width: 500px;
     height: 340px;
-    background-image: url('/img/bg.png');
+    background-image: url('/ATM/img/bg.png');
     background-size: cover;
     margin: auto;
     margin-top: auto;
@@ -88,7 +88,7 @@ color: #000000;
     color: white;
     text-decoration: none;
     font-size: 14px;
-    background-image: url('/img/Designer3.jpeg');
+    background-image: url('/ATM/img/Designer3.jpeg');
 
   }
   
@@ -225,7 +225,7 @@ h5{
 .form-login2 {
     width: 700px;
     height: 600px;
-    background-image: url('/img/fondomenu.jpg');
+    background-image: url('/ATM/img/fondomenu.jpg');
     margin: auto;
     margin-top: auto;
     box-shadow: 7px 13px 37px #000000;
